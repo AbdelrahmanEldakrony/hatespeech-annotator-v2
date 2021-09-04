@@ -31,14 +31,14 @@ from datetime import timedelta
 
 def get_graph_knowledge(person):
     
-    with open('../scripts/celeb_graph_knowledge.json', 'r') as fp:
+    with open('./celeb_graph_knowledge.json', 'r') as fp:
         data = json.load(fp)
     return data[person]
 
 
 def get_name(img_id):
 
-    with open('../scripts/celeb_boxes_10k.json', 'r') as fp:
+    with open('./celeb_boxes_10k.json', 'r') as fp:
         data = json.load(fp)
 
     celeb_names = []
